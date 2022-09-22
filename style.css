@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  
+  /* for the header */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+  }
+  header {
+    position: relative;
+    background-image: url("./images/desktop/image-hero.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo a {
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  header nav .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 20px;
+    font-size: 15px;
+  }
+  .header-container {
+    border: 2px solid #ffffff;
+    max-width: 30vw;
+    margin: 90px 100px;
+    padding: 20px;
+  }
+  .header-container h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #ffffff;
+  }
+  /* header part ends */
+  
+  /* about part */
+  .about , .creations{
+    /*for all sections*/
+    margin: 100px;
+  }
+  .container-on-top {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 60px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 500px;
+    margin-top: 200px;
+  }
+  .container-on-top h2 {
+    font-weight: 100;
+    width: 450px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #222222;
+  }
+  .container-on-top p {
+    font-size: 15px;
+    color: #b3b3b3;
+    line-height: 25px;
+  }
+  .image-at-bottom img {
+    /*image under*/
+    width: 700px;
+    z-index: 1;
+  }
+  /* about part end */
+  
+  /* creation section starts */
+  .creation-head {
+      display: flex;
+      justify-content: space-between;
+  }
+  .creation-head h2{
+      font-size: 35px;
+      font-weight: 100;
+      color: #222222;
+  }
+  .creation-head button{
+      padding: 10px 30px;
+      background: transparent;
+      border: 2px solid #b3b3b3;
+      font-size: 12px;
+      letter-spacing: 1px;
+  }
+  .creation-head button:hover{
+      background: #222222;
+      color: #ffffff;
+  }
