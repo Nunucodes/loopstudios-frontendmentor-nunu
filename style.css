@@ -1,104 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-  }
-  
-  /* for the header */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 100px;
-  }
-  header {
-    position: relative;
-    background-image: url("./images/desktop/image-hero.jpg");
-    height: 90vh;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .logo a {
-    font-size: 30px;
-    font-weight: 800;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  header nav .nav-links a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 0px 20px;
-    font-size: 15px;
-  }
-  .header-container {
-    border: 2px solid #ffffff;
-    max-width: 30vw;
-    margin: 90px 100px;
-    padding: 20px;
-  }
-  .header-container h1 {
-    font-size: 2.5rem;
-    font-weight: 100;
-    color: #ffffff;
-  }
-  /* header part ends */
-  
-  /* about part */
-  .about , .creations{
-    /*for all sections*/
-    margin: 100px;
-  }
-  .container-on-top {
-    max-width: 500px;
-    background-color: #ffffff;
-    padding: 60px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 500px;
-    margin-top: 200px;
-  }
-  .container-on-top h2 {
-    font-weight: 100;
-    width: 450px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    font-size: 40px;
-    color: #222222;
-  }
-  .container-on-top p {
-    font-size: 15px;
-    color: #b3b3b3;
-    line-height: 25px;
-  }
-  .image-at-bottom img {
-    /*image under*/
-    width: 700px;
-    z-index: 1;
-  }
-  /* about part end */
-  
-  /* creation section starts */
-  .creation-head {
-      display: flex;
-      justify-content: space-between;
-  }
-  .creation-head h2{
-      font-size: 35px;
-      font-weight: 100;
-      color: #222222;
-  }
-  .creation-head button{
-      padding: 10px 30px;
-      background: transparent;
-      border: 2px solid #b3b3b3;
-      font-size: 12px;
-      letter-spacing: 1px;
-  }
-  .creation-head button:hover{
-      background: #222222;
-      color: #ffffff;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* for the header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+header {
+  position: relative;
+  background-image: url("./images/desktop/image-hero.jpg");
+  height: 90vh;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo a {
+  font-size: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #ffffff;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0px 20px;
+  font-size: 15px;
+}
+.header-container {
+  border: 2px solid #ffffff;
+  max-width: 30vw;
+  margin: 90px 100px;
+  padding: 20px;
+}
+.header-container h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #ffffff;
+}
+/* header part ends */
+
+/* about part */
+.main_body {
+  width: 80%;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.about,
+.creations {
+  /*for all sections*/
+  margin: 100px 0 60px;
+}
+.image-stack {
+  width: 100%;
+  /* border: 1px solid yellow; */
+  position: relative;
+  margin-bottom: 100px;
+  padding-top: 30px;
+}
+.container-on-top {
+  max-width: 700px;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+  padding: 80px 0 80px 30px;
+  position: relative;
+  z-index: 2;
+  margin-left: 54%;
+  margin-top: 150px;
+}
+.container-on-top h2 {
+  font-weight: 100;
+  width: 450px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #222222;
+}
+.container-on-top p {
+  font-size: 15px;
+  color: #b3b3b3;
+  line-height: 25px;
+}
+.image-at-bottom img {
+  /*image under*/
+  width: 70%;
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+/* about part end */
+
+/* creation section starts */
+
+.creation-head {
+  display: flex;
+  justify-content: space-between;
+}
+.creation-head h2 {
+  font-size: 35px;
+  font-weight: 100;
+  color: #222222;
+}
+.creation-head button {
+  padding: 10px 30px;
+  background: transparent;
+  border: 2px solid #b3b3b3;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.creation-head button:hover {
+  background: #222222;
+  color: #ffffff;
+}
+/* For Grid items */
+.Grid_container {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid red; */
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: 33vw 33vw;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 5% 0;
+}
+.Grid_item {
+  position: relative;
+}
+
+.Grid_item img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.7);
+}
+.Grid_item h2 {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  margin-left: 30px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Grid_item:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+}
+footer {
+  height: 70px;
+  background-color: black;
+  margin-top: 90px;
+}
